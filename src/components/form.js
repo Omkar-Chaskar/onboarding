@@ -77,12 +77,12 @@ function FormOnbord() {
                   <p className="text-muted font-weight-bold">{formHeading[index].sub}</p>
                 </div>
                 <Form.Group className="my-3" controlId="formGroup">
-                  <Form.Label>First Name</Form.Label>
+                  <Form.Label>Full Name</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Steve Jobs"
-                    name="firstname"
-                    value={state.firstname}
+                    name="fullname"
+                    value={state.fullname}
                     onChange={(e) => {
                       dispatch({
                         type: "SET_DATA",
