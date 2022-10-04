@@ -1,7 +1,11 @@
-import './App.css';
-import { Header, FormOnbord } from './components';
+import "./App.css";
+import {
+  Header,
+  FormOnbord,
+} from "./components";
 
 function App() {
+
   return (
     <div className="container d-flex justify-content-center align-items-center App flex-column">
       <Header />
@@ -11,4 +15,3 @@ function App() {
 }
 
 export default App;
-   
