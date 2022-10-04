@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header, FormOnbord } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container d-flex justify-content-center align-items-center App flex-column">
+      <Header />
+      <FormOnbord />
     </div>
   );
 }
 
 export default App;
+   
