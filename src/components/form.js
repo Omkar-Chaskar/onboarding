@@ -12,6 +12,7 @@ import { BsFillPersonFill , BsCheck} from "react-icons/bs";
 import { HiUserGroup } from "react-icons/hi";
 import { useOnboarding } from "../context/onboardingProvider";
 import { MultiStepProgressBar, Buttons } from "./index";
+import { radios , formHeading} from "../utils/constantData"
 
 function FormOnbord() {
   const { state, dispatch } = useOnboarding();
@@ -30,34 +31,6 @@ function FormOnbord() {
     e.target.value = " ";
   };
   const [radioValue, setRadioValue] = useState(state.usefor);
-
-  const radios = [
-    {
-      title: "For myself",
-      text: "Write better. Think more clearly. Stay organized.",
-      value: 1,
-    },
-    {
-      title: "With my team",
-      text: "Wikis, docs, tasks &amp; projects, all in one place.",
-      value: 2,
-    },
-  ];
-
-  const formHeading = [
-    {
-      header: "Welcome! First things First...",
-      sub: "You can always change them later."
-    },
-    {
-      header: "Let's set up a home for all your work",
-      sub: "You can always create another workspace later."
-    },
-    {
-      header: "How are you planning to use Eden?",
-      sub: "We'll streamline your setup experience accordingly."
-    }
-  ];
 
   function handleFormSubmit(e) {
     e.preventDefault();
